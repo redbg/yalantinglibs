@@ -105,7 +105,7 @@ class metric_t {
 
   MetricType metric_type() { return type_; }
 
-  auto get_created_time() { return metric_created_time_; }
+  auto get_created_time() const { return metric_created_time_; }
 
   std::string_view metric_name() {
     switch (type_) {
